@@ -40,7 +40,8 @@ main {
 }
 
 .img-part .logo-container p {
-  font-size: 4rem;
+  font-family: "Pompiere", sans-serif;
+  font-size: 6rem;
   color: white;
   align-items: center;
   display: flex;
@@ -53,7 +54,7 @@ main {
 }
 
 .side-part {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(228, 228, 228);
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -84,9 +85,11 @@ main {
   margin-top: 1rem;
 }
 .side-main-part {
-  flex-basis: 45%;
+  flex-basis: 40%;
   display: flex;
   flex-direction: column;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0px 1px 15px 0px rgba(165, 165, 165, 0.75);
 }
 .main-content {
   display: flex;
