@@ -8,20 +8,44 @@
 
 header,
 footer {
-  border: 3px solid green;
-  height: 200px;
+  height: 50px;
+  background-color: lightgray;
 }
 
 main {
-  border: 3px solid darkred;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: lightgray;
 }
 
 .img-part {
-  border: 3px solid darkgoldenrod;
   flex-basis: 35%;
+  position: relative;
+}
+
+.img-part .logo-container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 250px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.img-part .logo-container img {
+  width: 6rem;
+}
+
+.img-part .logo-container p {
+  font-size: 4rem;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-part img {
@@ -29,7 +53,7 @@ main {
 }
 
 .side-part {
-  border: 3px solid darkorchid;
+  background-color: rgb(245, 245, 245);
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -39,33 +63,123 @@ main {
 }
 
 .side-header-part {
-  border: 3px solid greenyellow;
   flex-basis: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.side-main-part {
-  border: 3px solid rgb(51, 77, 13);
-  flex-basis: 50%;
-}
-.side-footer-part {
-  border: 3px solid greenyellow;
-  flex-basis: 25%;
-}
-
 .header-content {
-  border: 1px solid burlywood;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.8;
 }
 
 .header-content p {
+  color: rgb(83, 83, 83);
   margin-left: 3rem;
   width: 70%;
 }
 .header-content p:last-child {
   margin-top: 1rem;
+}
+.side-main-part {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main-content h2 {
+  margin: 1rem 0 0.5rem 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(58, 58, 58);
+}
+
+.main-content .form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.form-part {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+
+.form-part .form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form-control label {
+  color: rgb(74, 74, 74);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.form-control input {
+  border: 1px solid lightgray;
+  width: 16rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.form-control input:focus {
+  border: 2px solid lightblue;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  outline: none;
+}
+
+.form-control input:invalid {
+  border: 1px solid red;
+}
+
+.side-footer-part {
+  flex-basis: 25%;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.footer-content button {
+  background-color: #596d48;
+  border: 1px solid white;
+  border-radius: 7px;
+  color: white;
+  width: 12rem;
+  height: 3rem;
+  padding: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.footer-content p {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.footer-content a {
+  color: rgb(89 109 72);
+  font-weight: 700;
+  text-decoration: none;
 }

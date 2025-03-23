@@ -17,6 +17,10 @@
     <header></header>
     <main>
       <div class="img-part">
+        <div class="logo-container">
+          <img src="Images/odin-lined.png" alt="" />
+          <p>ODIN</p>
+        </div>
         <img src="Images/background.jpg" alt="" />
       </div>
       <div class="side-part">
@@ -30,8 +34,61 @@
             <p>You know you want to.</p>
           </div>
         </div>
-        <div class="side-main-part"></div>
-        <div class="side-footer-part"></div>
+        <div class="side-main-part">
+          <div class="main-content">
+            <h2>Let's do this!</h2>
+            <form class="form">
+              <div class="form-part">
+                <div class="form-control">
+                  <label for="first-name"> FIRST NAME </label>
+                  <input id="first-name" name="first-name" type="text" />
+                </div>
+                <div class="form-control">
+                  <label for="email">EMAIl </label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="form-control">
+                  <label for="password"> PASSWORD </label>
+                  <input
+                    minlength="8"
+                    maxlength="30"
+                    required
+                    type="password"
+                    name="password"
+                    id="password"
+                  />
+                </div>
+              </div>
+              <div class="form-part">
+                <div class="form-control">
+                  <label for="last-name"> LAST NAME </label>
+                  <input type="text" name="last-name" id="last-name" />
+                </div>
+                <div class="form-control">
+                  <label for="phone-number"> PHONE NUMBER </label>
+                  <input type="tel" name="phone-number" id="phone-number" />
+                </div>
+                <div class="form-control">
+                  <label for="password2">CONFIRM PASSWORD </label>
+                  <input
+                    minlength="8"
+                    maxlength="30"
+                    required
+                    type="password"
+                    name="password2"
+                    id="password2"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="side-footer-part">
+          <div class="footer-content">
+            <button>Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </div>
       </div>
     </main>
     <footer></footer>
